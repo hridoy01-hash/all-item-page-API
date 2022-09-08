@@ -279,13 +279,16 @@ svg {
     }
 
     .s1508_add_cart_icon_wrapper svg {
-        height: 15px;
-        width: 15px;
+        height: 13px;
+        width: 13px;
         cursor: pointer;
     }
 
     .s1508_active_add_cart_icon_wrapper svg path {
         opacity: 1;
+    }
+    .s1508_active_add_cart_icon_wrapper svg path{
+        fill: #E1AD01;
     }
 
 

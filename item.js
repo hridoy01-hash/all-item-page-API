@@ -89,7 +89,7 @@
                 ratingCount.style.color = `#ffffff`;
                 ratingCount.style.fontSize = `14px`;
                 ratingCount.style.fontWeight = `500`;
-                ratingCount.textContent = `(${totalReview})`;
+                ratingCount.textContent = `(${stars})`;
                 s1508_product_rating.appendChild(ratingCount);
 
 
@@ -118,9 +118,13 @@
             s1508_product_price_wrapper.appendChild(s1508_add_cart_icon_wrapper);
             const s1508_cart_icon = elementMaker("span", ["s1508_cart_icon"]);
             s1508_add_cart_icon_wrapper.appendChild(s1508_cart_icon);
-            s1508_cart_icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="12.045" height="14.199" viewBox="0 0 15.045 16.199"> <g id="cart" transform="translate(-313.4 -721.9)"> <path id="Body" d="M64.577,52.615a.577.577,0,0,0-.577.577V60.98A2.052,2.052,0,0,0,66.019,63h9.807a2.013,2.013,0,0,0,2.019-1.974V53.192a.577.577,0,0,0-.577-.577Z" transform="translate(250 674.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"></path> <path id="Handle" d="M67.461,52.615V51.461A3.461,3.461,0,0,1,70.922,48h0a3.461,3.461,0,0,1,3.461,3.461v1.154" transform="translate(250 674.5)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"></path> </g></svg>`;
+            s1508_cart_icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+            <g id="shopping-bag_1_" data-name="shopping-bag (1)" fill="none">
+                <path d="M13.5,4.5a4.5,4.5,0,1,0-9,0H0V15.75A2.25,2.25,0,0,0,2.25,18h13.5A2.25,2.25,0,0,0,18,15.75V4.5ZM9,1.5a3,3,0,0,1,3,3H6a3,3,0,0,1,3-3Z" stroke="none"></path>
+                <path d="M 1.5 6 L 1.5 15.75 C 1.5 16.16354942321777 1.836450576782227 16.5 2.25 16.5 L 15.75 16.5 C 16.16354942321777 16.5 16.5 16.16354942321777 16.5 15.75 L 16.5 6 L 1.5 6 M 9 0 C 11.48528003692627 0 13.5 2.01471996307373 13.5 4.5 L 18 4.5 L 18 15.75 C 18 16.99263954162598 16.99263954162598 18 15.75 18 L 2.25 18 C 1.007360458374023 18 0 16.99263954162598 0 15.75 L 0 4.5 L 4.5 4.5 C 4.5 2.01471996307373 6.51471996307373 0 9 0 Z M 12 4.5 C 12 2.84315013885498 10.65684986114502 1.5 9 1.5 C 7.34315013885498 1.5 6 2.84315013885498 6 4.5 L 12 4.5 Z" stroke="none" fill="#ffffff"></path>
+            </g>
+        </svg>`;
             s1508_add_cart_icon_wrapper.addEventListener("click", function () {
-                alert();
                 s1508_cart_icon.classList.toggle("s1508_active_add_cart_icon_wrapper");
             });
 
